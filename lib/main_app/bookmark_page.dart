@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'cart_page.dart';
 import 'home_page.dart';
 import 'notification_page.dart';
+import 'account_page.dart';
 
 class BookmarkPage extends StatelessWidget {
   const BookmarkPage({Key? key}) : super(key: key);
@@ -169,6 +170,12 @@ class BookmarkPage extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => const NotificationPage()),
+              );
+              break;
+            case 4:
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const AccountPage()),
               );
               break;
             default:

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:melar/main_app/account_page.dart';
 import 'cart_page.dart';
 import 'bookmark_page.dart';
 import 'notification_page.dart';
@@ -179,6 +180,12 @@ class HomePage extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => const NotificationPage()),
+              );
+              break;
+            case 4:
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const AccountPage()),
               );
               break;
             default:

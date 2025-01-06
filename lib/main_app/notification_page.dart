@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'account_page.dart';
 import 'bookmark_page.dart';
 import 'cart_page.dart';
 import 'home_page.dart';
@@ -102,7 +103,10 @@ class NotificationPage extends StatelessWidget {
             } else if (index == 3) {
               // Tetap di halaman Notification
             } else if (index == 4) {
-              // Arahkan ke halaman Account (implementasi jika ada)
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const AccountPage()),
+              );
             }
           },
           items: const [

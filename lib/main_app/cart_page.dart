@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:melar/main_app/account_page.dart';
 import 'bookmark_page.dart';
 import 'home_page.dart';
 import 'notification_page.dart';
@@ -55,6 +56,11 @@ class CartPage extends StatelessWidget {
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => const NotificationPage()),
+            );
+          } else if(index == 4){
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const AccountPage()),
             );
           }
         },
