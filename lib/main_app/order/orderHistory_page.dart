@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:melar/main_app/bookmark_page.dart';
 import 'package:melar/main_app/cart_page.dart';
 import 'package:melar/main_app/home_page.dart';
-import 'package:melar/main_app/notification_page.dart';
 import 'package:melar/main_app/account_page.dart';
 
 class OrderHistoryPage extends StatelessWidget {

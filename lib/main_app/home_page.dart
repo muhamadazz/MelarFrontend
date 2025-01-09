@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  Image.asset('assets/cars.png', height: 150),
+                  Image.asset('assets/images/cars.png', height: 150),
                   const SizedBox(height: 16),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -64,16 +64,19 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 16),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: const Text('Suggested for you', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              child: const Text(
+                'Suggested for you',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
             ),
             const SizedBox(height: 8),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  _buildProductCard(context, 'assets/tent.png', 'Rp. 140.000', 'Outdoor', 'S'),
-                  _buildProductCard(context, 'assets/backpack.png', 'Rp. 80.000', 'Outdoor', 'All Size'),
-                  _buildProductCard(context, 'assets/suit.png', 'Rp. 50.000', 'Clothes', 'M'),
+                  _buildProductCard(context, 'assets/images/tent.png', 'Rp. 140.000', 'Outdoor', 'S'),
+                  _buildProductCard(context, 'assets/images/backpack.png', 'Rp. 80.000', 'Outdoor', 'All Size'),
+                  _buildProductCard(context, 'assets/images/suit.png', 'Rp. 50.000', 'Clothes', 'M'),
                 ],
               ),
             ),
@@ -82,9 +85,16 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Text('Recommended store', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  Text('>', style: TextStyle(color: Colors.green, fontSize: 16)),
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      // Tambahkan logika jika tombol ">" ditekan
+                    },
+                    child: const Text(
+                      'Recommended Store >',
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -101,7 +111,11 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               itemCount: 2,
               itemBuilder: (context, index) {
-                return _buildStoreCard('Suit’n’Sweet', 4.5);
+                final stores = [
+                  {'name': 'Asep Jibar', 'rating': 4.5},
+                  {'name': 'Dadang Kupling', 'rating': 4.5},
+                ];
+                return _buildStoreCard(stores[index]['name'] as String, stores[index]['rating'] as double);
               },
             ),
             const SizedBox(height: 16),
@@ -109,16 +123,23 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Text('Recently Viewed', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  Text('>', style: TextStyle(color: Colors.green, fontSize: 16)),
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      // Tambahkan logika jika tombol ">" ditekan
+                    },
+                    child: const Text(
+                      'Recently Viewed >',
+                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    ),
+                  ),
                 ],
               ),
             ),
             const SizedBox(height: 8),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: _buildProductCard(context, 'assets/suit.png', 'Rp. 50.000', 'Clothes', 'M'),
+              child: _buildProductCard(context, 'assets/images/suit.png', 'Rp. 50.000', 'Clothes', 'M'),
             ),
           ],
         ),

@@ -34,7 +34,7 @@ class ProductPage extends StatelessWidget {
               height: 250,
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/tent.jpg'), // Ganti dengan gambar produk
+                  image: AssetImage('assets/images/tent.png'), // Ganti dengan gambar produk
                   fit: BoxFit.cover,
                 ),
               ),
@@ -72,7 +72,7 @@ class ProductPage extends StatelessWidget {
                       Row(
                         children: [
                           CircleAvatar(
-                            backgroundImage: AssetImage('assets/store.jpg'), // Gambar toko
+                            backgroundImage: AssetImage('assets/images/store.png'), // Gambar toko
                             radius: 20,
                           ),
                           const SizedBox(width: 8),
@@ -167,9 +167,9 @@ class ProductPage extends StatelessWidget {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
-                        _buildRelatedProduct(context, 'assets/tent.jpg', 'Rp. 140,000'),
-                        _buildRelatedProduct(context, 'assets/backpack.jpg', 'Rp. 80,000'),
-                        _buildRelatedProduct(context, 'assets/suit.jpg', 'Rp. 50,000'),
+                        _buildRelatedProduct(context, 'assets/images/tent.png', 'Rp. 140,000'),
+                        _buildRelatedProduct(context, 'assets/images/backpack.png', 'Rp. 80,000'),
+                        _buildRelatedProduct(context, 'assets/images/suit.png', 'Rp. 50,000'),
                       ],
                     ),
                   ),

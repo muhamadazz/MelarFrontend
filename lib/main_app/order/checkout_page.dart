@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:melar/main_app/order/orderHistory_page';
+import 'orderHistory_page.dart';
 
 class CheckoutPage extends StatefulWidget {
   @override
