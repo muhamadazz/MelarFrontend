@@ -1,16 +1,22 @@
-# melar
+# 📱 MELAR - Aplikasi Rental Barang (Flutter)  
 
-Software Project
+MELAR adalah aplikasi mobile berbasis **Flutter** yang menyediakan layanan **sewa barang** dengan antarmuka yang modern dan mudah digunakan. Aplikasi ini terhubung dengan backend berbasis **Django** untuk manajemen pengguna, penyewaan barang, dan transaksi pembayaran.  
 
-## Getting Started
+## ✨ Fitur Utama  
+✅ **Registrasi & Login** – Autentikasi pengguna dengan integrasi backend.  
+✅ **Browsing Barang** – Lihat daftar barang yang tersedia untuk disewa.  
+✅ **Detail Penyewaan** – Informasi lengkap mengenai barang dan syarat penyewaan.  
+✅ **Manajemen Penyewaan** – Lihat status sewa aktif dan riwayat transaksi.    
+✅ **UI Responsif** – Desain modern dengan navigasi yang mudah.  
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Teknologi yang Digunakan  
+- **Flutter** – Framework utama untuk pengembangan aplikasi mobile.  
+- **Dart** – Bahasa pemrograman untuk Flutter.  
+- **Dio** – HTTP client untuk komunikasi API dengan backend.  
+- **Provider / Riverpod** – State management untuk pengelolaan data aplikasi.  
+- **SQLite** – Penyimpanan lokal untuk caching data pengguna.  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📡 Backend  
+Aplikasi ini terhubung dengan backend **Django** yang dapat ditemukan di repository berikut:  
+🔗 **[MELAR Backend - Django](https://github.com/muhamadazz/melar_backend)**  
